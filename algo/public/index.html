@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteger Script Lua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            background: #222;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-family: monospace;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff4747;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff2424;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Proteja seu Script Lua</h2>
+        <form method="POST" action="/proteger">
+            <textarea name="codigo" placeholder="Cole seu script aqui..." required></textarea><br>
+            <button type="submit">Proteger Script</button>
+        </form>
+    </div>
+</body>
+</html>
